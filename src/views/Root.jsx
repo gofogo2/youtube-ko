@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Root = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center" >
       <Navbar />
       <Outlet />
     </div>
