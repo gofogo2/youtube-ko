@@ -2,7 +2,7 @@ import React from "react";
 import icon_youtube from "../assets/images/icon_youtube.png";
 import icon_search from "../assets/images/icon_search.svg";
 
-const Navbar = () => {
+const SearchHeader = () => {
   return (
     <div className="flex flex-row items-center justify-start w-full h-12 max-w-5xl px-5 mt-5 border-b-[1px] pb-5 t-5 border-black">
       <div className="flex flex-row items-center justify-center ">
@@ -17,4 +17,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default SearchHeader;
