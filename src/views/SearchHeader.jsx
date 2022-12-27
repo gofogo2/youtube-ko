@@ -17,21 +17,21 @@ const SearchHeader = () => {
     navigate(`/videos/${text}`);
   };
   return (
-    <header>
-      <div>
-        <Link to="/" >
-        <BsYoutube />
-        <h1>Youtube</h1>
+    <header className="flex w-full p-4 mb-4 text-2xl border-b border-zinc-600" >
+      <div className="flex flex-row items-center" >
+        <Link to="/" className="flex items-center" >
+        <BsYoutube className="text-4xl text-brend" />
+        <h1 className="ml-2 text-3xl font-bold">Youtube</h1>
         </Link>
       </div>
-      <form onSubmit={handleSumit}>
-        <input
+      <form className="flex justify-center w-full" onSubmit={handleSumit}>
+        <input className="w-7/12 p-2 bg-black outline-none text-gray-50"
           type="text"
           placeholder="Search..."
           onChange={(e) => setText(e.target.value)}
-          value={text}
+          v alue={text}
         />
-        <button>
+        <button className="px-4 bg-zinc-400" >
           <BsSearch />
         </button>
       </form>
